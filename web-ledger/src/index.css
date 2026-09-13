@@ -1,0 +1,76 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  background: #f5f5f9;
+}
+body {
+  overflow: auto !important;
+  -webkit-overflow-scrolling: touch;
+}
+#example, .page {
+  min-height: 100%;
+}
+.boot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.summary {
+  display: flex;
+  margin: 12px;
+  padding: 16px 8px;
+  background: #fff;
+  border-radius: 8px;
+  text-align: center;
+}
+.summary > div {
+  flex: 1;
+}
+.summary .label {
+  color: #888;
+  font-size: 13px;
+  margin-bottom: 6px;
+}
+.summary .value {
+  font-size: 18px;
+  font-weight: 600;
+}
+.income {
+  color: #108ee9;
+}
+.expense {
+  color: #f4333c;
+}
+.user-line {
+  color: #888;
+  font-size: 13px;
+  margin: 8px 0 12px;
+}
+.chips {
+  margin-top: 8px;
+}
+.chip {
+  display: inline-block;
+  margin: 0 8px 8px 0;
+  padding: 4px 10px;
+  border-radius: 14px;
+  background: #f5f5f9;
+  color: #333;
+  font-size: 13px;
+}
+.chip.on {
+  background: #108ee9;
+  color: #fff;
+}
+.row-actions {
+  display: inline-block;
+  margin-left: 8px;
+}
+.row-actions a {
+  margin-right: 10px;
+  color: #108ee9;
+}
+.row-actions a.danger {
+  color: #f4333c;
+}
