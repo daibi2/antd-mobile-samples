@@ -186,9 +186,9 @@ export default class LedgerPage extends React.Component {
             类型
           </List.Item>
           <InputItem
-            type="number"
+            type="text"
             value={form.amount}
-            onChange={(v) => this.setState({ form: Object.assign({}, form, { amount: v }) })}
+            onChange={(v) => this.setState({ form: Object.assign({}, form, { amount: v.replace(/[^\d.]/g, '') }) })}
             placeholder="0.00"
             extra="元"
           >
